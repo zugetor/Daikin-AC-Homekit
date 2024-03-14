@@ -10,10 +10,17 @@ A firmware for ESP8266 to control Daikin Air Conditioner.
 You can set heat and cool temp in homekit, control fan speed and swing in EVE app.
 
 **Daikin AC Supported**
-- *Daikin ARC433-- remote;*
-- *Daikin ARC480A5 remote;*
-- *Daikin ARC423A5 remote;*
-- *Daikin ARC433B69 remote;*
+Data from [IRremoteESP8266 Supported Protocols](https://github.com/crankyoldgit/IRremoteESP8266/blob/master/SupportedProtocols.md)
+- *Daikin ARC433-- remote (DAIKIN);*
+- *Daikin ARC466A12 remote (DAIKIN);*
+- *Daikin ARC466A33 remote (DAIKIN);*
+- *Daikin FTXM-M A/C (DAIKIN);*
+- *Daikin M Series A/C (DAIKIN);*
+- *Daikin ARC480A5 remote (DAIKIN160);*
+- *Daikin ARC423A5 remote (DAIKIN152);*
+- *Daikin ARC433B69 remote (DAIKIN216);*
+- *Daikin ARC484A4 remote (DAIKIN216);*
+- *Daikin FTQ60TV16U2 remote (DAIKIN216);*
 
 **Hardware**
 

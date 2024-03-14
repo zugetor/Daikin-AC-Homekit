@@ -557,9 +557,9 @@ void ac_button_temp_task() {
 
 		// Swing
 		if (swing == false) {
-			DaikinTemplate_160[13] = 0x03; // OFF (default to middle position)
+			DaikinTemplate_160[13] = 0x31; // OFF (default to middle position)
 		} else if (swing == true) {
-			DaikinTemplate_160[13] = 0x0F; // AUTO
+			DaikinTemplate_160[13] = 0xF1; // AUTO
 		}
 
 		// Calculate Temp
