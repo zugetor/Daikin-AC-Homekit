@@ -375,14 +375,17 @@ void ac_button_off_task() {
 
 // MACRO
 void ac_button_temp_task() {
+	if (mode == 1) {
+		temperature = 25; // overide a temp to 25
+	}
 
 	switch (daikin_type) {
 
 	case 0:
 
-		// HEAT/COOL Mode
+		// DRY/COOL Mode
 		if (mode == 1) {
-			DaikinTemplate[21] = 0x41; // HEAT
+			DaikinTemplate[21] = 0x21; // DRY
 		} else if (mode == 2) {
 			DaikinTemplate[21] = 0x31; // COOL
 		}
@@ -468,9 +471,9 @@ void ac_button_temp_task() {
 
 	case 1:
 
-		// HEAT/COOL Mode
+		// DRY/COOL Mode
 		if (mode == 1) {
-			DaikinTemplate_152[5] = 0x41; // HEAT
+			DaikinTemplate_152[5] = 0x21; // DRY
 		} else if (mode == 2) {
 			DaikinTemplate_152[5] = 0x31; // COOL
 		}
@@ -533,9 +536,9 @@ void ac_button_temp_task() {
 
 	case 2:
 
-		// HEAT/COOL Mode
+		// DRY/COOL Mode
 		if (mode == 1) {
-			DaikinTemplate_160[12] = 0x41; // HEAT
+			DaikinTemplate_160[12] = 0x21; // DRY
 		} else if (mode == 2) {
 			DaikinTemplate_160[12] = 0x31; // COOL
 		}
@@ -605,9 +608,9 @@ void ac_button_temp_task() {
 
 	case 3:
 
-		// HEAT/COOL Mode
+		// DRY/COOL Mode
 		if (mode == 1) {
-			DaikinTemplate_216[13] = 0x41; // HEAT
+			DaikinTemplate_216[13] = 0x21; // DRY
 		} else if (mode == 2) {
 			DaikinTemplate_216[13] = 0x31; // COOL
 		}

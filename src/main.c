@@ -125,12 +125,9 @@ void update_state() {
 	// OFF CLIMA
 
 	if (state == 0 && init_state != 0) {
-		enable_swing.value.bool_value = false;
-		target_swing = enable_swing.value.bool_value;
 		init_state = 0;
 		ac_button_off();
 		led_code(led_gpio, FUNCTION_C);
-		homekit_characteristic_notify(&enable_swing, enable_swing.value);
 	} else if (switch_temp_update == 0) {
 		update_temp();
 	}
